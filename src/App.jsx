@@ -19,15 +19,15 @@ function App() {
 
       {/* Hero Section */}
       <section className="hero" id="home">
-        <h1>Hi, I'm <span className="highlight">Your Name</span></h1>
+        <h1>Hi, I'm <span className="highlight">Amishka MIndika Disanayaka</span></h1>
         <h2>
           <TypeAnimation
             sequence={[
-              "A Web Developer 🚀", 
+              "A Web Developer ", 
               1000, 
-              "A React Enthusiast ⚛️", 
+              "A React Enthusiast ", 
               1000, 
-              "A Creative Coder 💡", 
+              "A Creative Coder ", 
               1000
             ]}
             wrapper="span"
