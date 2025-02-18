@@ -1,93 +1,62 @@
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
 import "./App.css";
+import profileImage from "./assets/profile.jpg"; // Replace with your image path
 
 function App() {
   return (
     <div className="App">
-      {/* Navbar */}
-      <header className="navbar">
-        <h2 className="logo">MyPortfolio</h2>
+      {/* Header Section */}
+      <header className="header">
+        <h1>My Portfolio</h1>
         <nav>
-          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="hero" id="home">
-        <h1>Hi, I'm <span className="highlight">Amishka MIndika Disanayaka</span></h1>
-        <h2>
-          <TypeAnimation
-            sequence={[
-              "A Web Developer ", 
-              1000, 
-              "A React Enthusiast ", 
-              1000, 
-              "A Creative Coder ", 
-              1000
-            ]}
-            wrapper="span"
-            cursor={true}
-            repeat={Infinity}
-          />
-        </h2>
-        <p>Passionate about building interactive web applications.</p>
-        <a href="#contact" className="btn">Let's Connect</a>
-      </section>
-
-      {/* About Section */}
-      <section className="about" id="about">
-        <h2>About Me</h2>
-        <p>
-          I'm a front-end web developer with experience in building scalable web applications.
-          I specialize in React, JavaScript, and modern UI/UX designs.
-        </p>
+      <section className="hero">
+        <img src={profileImage} alt="Profile" className="profile-image" />
+        <h2>Hi, I'm [Your Name]</h2>
+        <p>Full Stack Developer | React Enthusiast | Creative Coder</p>
       </section>
 
       {/* Projects Section */}
-      <section className="projects" id="projects">
+      <section id="projects" className="projects-section">
         <h2>My Projects</h2>
-        <div className="project-grid">
+        <div className="projects-grid">
           <div className="project-card">
-            <img src="project1.jpg" alt="Project 1" />
             <h3>Project One</h3>
-            <p>A cool web app built using React and Firebase.</p>
+            <p>A modern React project with cool features.</p>
+            <a href="#">View Project</a>
           </div>
-          <div className="project-card">
-            <img src="project2.jpg" alt="Project 2" />
-            <h3>Project Two</h3>
-            <p>An e-commerce website with modern UI.</p>
-          </div>
-        </div>
-      </section>
 
-      {/* Skills Section */}
-      <section className="skills" id="skills">
-        <h2>Skills</h2>
-        <div className="skills-grid">
-          <span>React</span>
-          <span>JavaScript</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>Node.js</span>
-          <span>MongoDB</span>
+          <div className="project-card">
+            <h3>Project Two</h3>
+            <p>A fully responsive website built with React and CSS.</p>
+            <a href="#">View Project</a>
+          </div>
+
+          <div className="project-card">
+            <h3>Project Three</h3>
+            <p>An e-commerce application with a great user experience.</p>
+            <a href="#">View Project</a>
+          </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="contact" id="contact">
+      <section id="contact" className="contact-section">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or just a chat.</p>
-        <a href="mailto:your.email@example.com" className="btn">Email Me</a>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <p>GitHub: github.com/yourgithub</p>
       </section>
 
       {/* Footer */}
       <footer className="footer">
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <p>© 2025 Your Name. All rights reserved.</p>
       </footer>
     </div>
   );
