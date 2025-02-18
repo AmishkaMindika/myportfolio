@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import profileImage from "./assets/profile.jpg"; // Replace with your image path
+
 
 function App() {
   return (
