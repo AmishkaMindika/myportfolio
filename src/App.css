@@ -77,10 +77,11 @@ body {
   z-index: 1;
 }
 
-.hero p {
-  font-size: 20px;
-  color: #aaa;
+.type-animation {
+  font-size: 24px;
+  color: #00bcd4;
   z-index: 1;
+  margin-top: 10px;
 }
 
 .profile-image {
