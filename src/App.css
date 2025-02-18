@@ -1,124 +1,167 @@
-/* General Styles */
+/* Global Styles */
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: #f4f4f4;
-  color: #333;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #121212;
+  overflow-x: hidden;
 }
 
-/* Navbar */
-.navbar {
+/* Header Section */
+.header {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background: #222;
-  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
-.navbar a {
-  color: white;
+.header h1 {
+  font-size: 24px;
+}
+
+.header nav a {
+  color: #fff;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+  margin-left: 20px;
+  transition: color 0.3s;
 }
 
-.logo {
-  font-size: 1.5rem;
+.header nav a:hover {
+  color: #00bcd4;
 }
 
 /* Hero Section */
 .hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #ff7e5f, #feb47b);
-  color: white;
+  height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a, #121212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(0, 188, 212, 0.2), transparent);
+  animation: rotateBackground 20s infinite linear;
+  z-index: 0;
 }
 
-.hero .highlight {
-  color: yellow;
+@keyframes rotateBackground {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin: 0;
+  z-index: 1;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 20px;
+  color: #aaa;
+  z-index: 1;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border: 3px solid #00bcd4;
+  z-index: 1;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 80px 20px;
+  background-color: #1a1a1a;
+}
+
+.projects-section h2 {
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
-.btn {
-  background: white;
-  color: #ff7e5f;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #ff7e5f;
-  color: white;
-}
-
-/* Sections */
-section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-/* Projects */
-.project-grid {
+.projects-grid {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .project-card {
-  background: white;
+  background-color: #1f1f1f;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  transition: all 0.3s ease;
 }
 
-.project-card img {
-  width: 100%;
-  height: 150px;
-  border-radius: 10px;
-  object-fit: cover;
+.project-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-/* Skills */
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+.project-card p {
+  font-size: 16px;
+  color: #ccc;
 }
 
-.skills-grid span {
-  background: #ff7e5f;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
+.project-card a {
+  text-decoration: none;
+  color: #00bcd4;
   font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-/* Contact */
-.contact p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #121212;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: #aaa;
 }
 
 /* Footer */
 .footer {
-  text-align: center;
   padding: 20px;
-  background: #222;
-  color: white;
+  background-color: #1f1f1f;
+  color: #aaa;
+  font-size: 14px;
 }
-
-
-
