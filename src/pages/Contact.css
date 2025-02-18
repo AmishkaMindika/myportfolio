@@ -1,0 +1,10 @@
+.contact {
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #1a1a1a;
+    background-image: url('myportB1.gif'); /* Change this to your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  

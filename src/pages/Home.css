@@ -1,0 +1,73 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px;
+    color: #ffffff;
+    text-align: left;
+    gap: 50px;
+    
+    /* Add background image */
+    background-image: url('myportB1.gif'); /* Change this to your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Text Content */
+  .text-content {
+    max-width: 600px;
+  }
+  
+  .text-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .type-animation {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #29cbd6;
+  }
+  
+  /* Profile Image Container */
+  .profile-image-container {
+    flex-shrink: 0;
+  }
+  
+  .profile-image {
+    width: 400px;
+    height: 450px;
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(76, 216, 216, 0.644);
+    transition: transform 0.3s;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+    }
+  
+    .text-content h1 {
+      font-size: 2rem;
+    }
+  
+    .type-animation {
+      font-size: 1.2rem;
+    }
+  
+    .profile-image {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  

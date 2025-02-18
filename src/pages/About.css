@@ -1,0 +1,11 @@
+.about {
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+    background-color: #1a1a1a;
+    background-image: url('myportB1.gif'); /* Change this to your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  

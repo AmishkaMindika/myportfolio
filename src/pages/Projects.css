@@ -1,0 +1,20 @@
+.projects {
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #121212;
+  }
+  
+  .project-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  

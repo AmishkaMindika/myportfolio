@@ -1,66 +1,53 @@
-import React from 'react';
-import Typed from 'react-typed';
-import './App.css';
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import "./App.css";
 
 function App() {
+  // Particle effect
+  useEffect(() => {
+    const numParticles = 100;
+    const particlesContainer = document.querySelector(".particles");
+
+    for (let i = 0; i < numParticles; i++) {
+      const particle = document.createElement("div");
+      particle.classList.add("particle");
+
+      particle.style.left = `${Math.random() * 100}vw`;
+      particle.style.top = `${Math.random() * 100}vh`;
+      particle.style.animationDelay = `${Math.random() * 10}s`;
+      particle.style.animationDuration = `${Math.random() * 10 + 5}s`;
+
+      particlesContainer.appendChild(particle);
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <div className="background-animation"></div>
-      <header className="header">
-        <h1>Welcome to My Portfolio</h1>
-        <Typed
-          strings={[
-            'I am a Full Stack Developer',
-            'I am a UI/UX Designer',
-            'I am a Tech Enthusiast',
-          ]}
-          typeSpeed={50}
-          backSpeed={50}
-          loop
-          className="typed-text"
-        />
-      </header>
-      <section className="about">
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm John Doe, a passionate developer with expertise in building modern web applications.
-          I love working with React, Node.js, and designing beautiful user interfaces.
-        </p>
-      </section>
-      <section className="skills">
-        <h2>Skills</h2>
-        <div className="skills-grid">
-          <div className="skill">React</div>
-          <div className="skill">JavaScript</div>
-          <div className="skill">Node.js</div>
-          <div className="skill">CSS3</div>
-          <div className="skill">HTML5</div>
-          <div className="skill">MongoDB</div>
-        </div>
-      </section>
-      <section className="projects">
-        <h2>Projects</h2>
-        <div className="projects-grid">
-          <div className="project">
-            <h3>Project 1</h3>
-            <p>A modern e-commerce platform built with React and Node.js.</p>
-          </div>
-          <div className="project">
-            <h3>Project 2</h3>
-            <p>A task management app with real-time collaboration features.</p>
-          </div>
-          <div className="project">
-            <h3>Project 3</h3>
-            <p>A portfolio website showcasing my skills and projects.</p>
-          </div>
-        </div>
-      </section>
-      <footer className="footer">
-        <p>&copy; 2023 John Doe. All rights reserved.</p>
-      </footer>
-    </div>
+    <Router>
+      <div className="App">
+        {/* Background animations */}
+        <div className="background"></div>
+        <div className="particles"></div>
+
+        {/* Navigation */}
+        <Navbar />
+
+        {/* Routes */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
 
