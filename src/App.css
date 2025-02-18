@@ -48,5 +48,77 @@ body {
   margin-bottom: 20px;
 }
 
+.btn {
+  background: white;
+  color: #ff7e5f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #ff7e5f;
+  color: white;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Projects */
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills-grid span {
+  background: #ff7e5f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Contact */
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
 
 
