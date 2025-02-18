@@ -1,6 +1,7 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 import "./App.css";
-
+import profileImage from "./assets/profile.jpg"; // Make sure to have your image here
 
 function App() {
   return (
@@ -19,7 +20,20 @@ function App() {
       <section className="hero">
         <img src={profileImage} alt="Profile" className="profile-image" />
         <h2>Hi, I'm [Your Name]</h2>
-        <p>Full Stack Developer | React Enthusiast | Creative Coder</p>
+        <TypeAnimation
+          sequence={[
+            "A Full Stack Developer",
+            1000,
+            "A Creative Coder",
+            1000,
+            "A React Enthusiast",
+            1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          repeat={Infinity}
+          className="type-animation"
+        />
       </section>
 
       {/* Projects Section */}
@@ -28,19 +42,19 @@ function App() {
         <div className="projects-grid">
           <div className="project-card">
             <h3>Project One</h3>
-            <p>A modern React project with cool features.</p>
+            <p>A modern React project with amazing features.</p>
             <a href="#">View Project</a>
           </div>
 
           <div className="project-card">
             <h3>Project Two</h3>
-            <p>A fully responsive website built with React and CSS.</p>
+            <p>A responsive website built with React and modern CSS.</p>
             <a href="#">View Project</a>
           </div>
 
           <div className="project-card">
             <h3>Project Three</h3>
-            <p>An e-commerce application with a great user experience.</p>
+            <p>An interactive React application for productivity.</p>
             <a href="#">View Project</a>
           </div>
         </div>
@@ -63,3 +77,4 @@ function App() {
 }
 
 export default App;
+
