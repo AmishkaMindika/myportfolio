@@ -46,13 +46,13 @@ function Contact() {
 
         {/* Contact Links */}
         <div className="contact-links">
-          <a href="mailto:your.email@example.com" className="contact-item">
+          <a href="mindikam7@gmail.com" className="contact-item">
             <FaEnvelope className="icon" /> your.email@example.com
           </a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-item">
+          <a href="https://www.linkedin.com/in/amishka-mindika-4937b61aa?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTtyET4eBRaeFQBpiB5Zwxw%3D%3D" target="_blank" rel="noopener noreferrer" className="contact-item">
             <FaLinkedin className="icon" /> linkedin.com/in/yourprofile
           </a>
-          <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" className="contact-item">
+          <a href="https://github.com/AmishkaMindika" target="_blank" rel="noopener noreferrer" className="contact-item">
             <FaGithub className="icon" /> github.com/yourgithub
           </a>
         </div>
