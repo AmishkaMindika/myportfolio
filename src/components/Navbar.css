@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: rgba(4, 14, 29, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 4px rgba(93, 179, 174, 0.247);
+    
     position: fixed;
     top: 0;
     width: 100%;
@@ -13,10 +13,10 @@
   
   .nav-links {
     display: flex;
-    gap: 70px;
+    gap: 20px;
     padding-right: 3%;
     font-weight: bolder;
-    margin-top: 2%;
+    margin-top: 3%;
   }
   
   .nav-links a {

@@ -7,17 +7,15 @@
 }
 
 .home {
-  
-  
-  
-  background-size: cover;
+ 
+ 
   background-position: center;
-
-  color: #1b1a1a;
+  background-attachment: fixed;
+  color: #435050;
   display: flex;
-  flex-direction: column;
+  
   align-items: center;
-  background-color: aliceblue;
+  background-color: #f0f5f4;
 }
 
 /* Navbar */
@@ -26,22 +24,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background: rgba(207, 246, 247, 0.6);
+  padding: 15px 50px;
+  background: #f0f5f4;
   position: fixed;
   top: 0;
   z-index: 100;
 }
 
+/* Logo */
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #29cbd6;
+  color: #3eadb1;
+}
+
+/* Center Navigation Links */
+.nav-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
+  background: rgba(20, 170, 163, 0.2);
+  padding: 10px 25px;
+  border-radius: 30px;
 }
 
 .nav-links li {
@@ -50,17 +59,20 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #0f0f0f;
+  color: #434e4e;
   font-size: 1rem;
   transition: 0.3s;
+  padding: 8px 15px;
+  border-radius: 20px;
 }
 
 .nav-links a:hover {
-  color: #29cbd6;
+  background: rgba(255, 255, 255, 0.3);
 }
 
+/* Quick Contact Button */
 .quick-contact {
-  background-color: #49d2db;
+  background-color: #5ec0c4;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -70,7 +82,7 @@
 }
 
 .quick-contact:hover {
-  background-color: #2391a0;
+  background-color: #1b4b4d;
 }
 
 /* Hero Section */
@@ -85,7 +97,7 @@
 }
 
 .text-content {
-  max-width: 600px;
+max-width: 80%;
 }
 
 .tagline {
@@ -99,11 +111,10 @@
 h1 {
   font-size: 3.5rem;
   font-weight: bold;
-  
 }
 
 .highlight {
-  color: #42ccd6;
+  color: #5dbdc0;
 }
 
 .description {
@@ -135,23 +146,23 @@ h1 {
 }
 
 .hire-btn {
-  background-color: #4eafb6;
+  background-color: #509b9b;
   color: white;
   margin-right: 10px;
 }
 
 .hire-btn:hover {
-  background-color: #192928;
+  background-color: #201f1f;
 }
 
 .watch-btn {
   background: transparent;
-  border: 2px solid rgb(36, 31, 31);
-  color: rgb(60, 175, 169);
+  border: 2px solid white;
+  color: white;
 }
 
 .watch-btn:hover {
-  background-color: rgb(33, 71, 71);
+  background-color: white;
   color: black;
 }
 
@@ -163,10 +174,9 @@ h1 {
 .profile-image {
   width: 500px;
   height: auto;
-  margin-left: 32%;
-  
   
   transition: transform 0.3s;
+  margin-left: 28%;
 }
 
 .profile-image:hover {
@@ -192,7 +202,7 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .nav-links {
-    display: none; /* Hide menu on mobile */
+  .nav-center {
+    display: none; /* Hide middle menu on mobile */
   }
 }
