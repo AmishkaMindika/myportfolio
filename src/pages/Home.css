@@ -92,12 +92,13 @@
   align-items: center;
   max-width: 1200px;
   width: 100%;
-  padding: 100px 50px;
-  margin-top: 80px;
+  padding: 60px 20px;
+  margin-top: 100px;
 }
 
 .text-content {
-max-width: 80%;
+ max-width: 100%;
+ padding-left: 20%;
 }
 
 .tagline {
@@ -105,7 +106,7 @@ max-width: 80%;
   color: #29cbd6;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 h1 {
@@ -114,18 +115,18 @@ h1 {
 }
 
 .highlight {
-  color: #5dbdc0;
+  color: #68aeb1;
 }
 
 .description {
   font-size: 1.1rem;
-  margin: 15px 0;
+  margin: 15px ;
 }
 
 .type-animation {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: bold;
-  color: #29cbd6;
+  color: #3b3f3f;
   margin-top: 10px;
 }
 
@@ -148,7 +149,7 @@ h1 {
 .hire-btn {
   background-color: #509b9b;
   color: white;
-  margin-right: 10px;
+  margin-right: 70px;
 }
 
 .hire-btn:hover {

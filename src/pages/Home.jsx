@@ -27,15 +27,19 @@ function Home() {
         <div className="text-content">
           
           <h1>
-            I'm <span className="highlight">AMISHKA MINDIKA</span>
+            I'M <span className="highlight">
+              AMISHKA MINDIKA</span>
           </h1>
           <p>
             
           </p>
-         
+         <h1>
+
+         </h1>
 
           {/* Type Animation */}
           <TypeAnimation
+          
             sequence={[
               "Web Developer",
               1000,
@@ -52,6 +56,9 @@ function Home() {
 
           {/* Buttons */}
           <div className="buttons">
+            <p>
+              
+            </p>
             <button className="hire-btn">Hire Me</button>
             <button className="watch-btn">▶ Watch Video</button>
           </div>
