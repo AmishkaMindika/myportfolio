@@ -99,6 +99,7 @@
 h1 {
   font-size: 3.5rem;
   font-weight: bold;
+  
 }
 
 .highlight {
@@ -162,7 +163,8 @@ h1 {
 .profile-image {
   width: 500px;
   height: auto;
-  border-radius: 10px;
+  margin-left: 32%;
+  
   
   transition: transform 0.3s;
 }

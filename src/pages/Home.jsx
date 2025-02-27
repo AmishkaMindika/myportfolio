@@ -7,7 +7,7 @@ function Home() {
     <div className="home">
       {/* Navigation Bar */}
       <nav className="navbar">
-        <div className="logo">Amishka</div>
+        <div className="logo">~AM~</div>
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -21,9 +21,9 @@ function Home() {
       {/* Hero Section */}
       <div className="hero">
         <div className="text-content">
-          <p className="tagline">CREATIVE & CLEAN</p>
+          
           <h1>
-            MY NAME <span className="highlight">AMISHKA</span>
+            MY NAME IS <span className="highlight">AMISHKA MINDIKA</span>
           </h1>
           <p className="description">
             I create stunning and functional websites using modern technologies.
@@ -31,6 +31,9 @@ function Home() {
           </p>
 
           {/* Type Animation */}
+          <p>
+
+          </p>
           <TypeAnimation
             sequence={[
               "Web Developer",
