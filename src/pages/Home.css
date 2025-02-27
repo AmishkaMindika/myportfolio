@@ -1,73 +1,196 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
 .home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 50px;
-    color: #ffffff;
-    text-align: left;
-    gap: 50px;
-    
-    /* Add background image */
-    background-image: url('myportB1.gif'); /* Change this to your image path */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
   
-  /* Text Content */
-  .text-content {
-    max-width: 600px;
-  }
   
-  .text-content h1 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-  }
   
-  .type-animation {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #29cbd6;
-  }
+  background-size: cover;
+  background-position: center;
+
+  color: #1b1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(207, 246, 247, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #29cbd6;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0f0f0f;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #29cbd6;
+}
+
+.quick-contact {
+  background-color: #49d2db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quick-contact:hover {
+  background-color: #2391a0;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 100px 50px;
+  margin-top: 80px;
+}
+
+.text-content {
+  max-width: 600px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #29cbd6;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #42ccd6;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+.type-animation {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #29cbd6;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+}
+
+.hire-btn,
+.watch-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hire-btn {
+  background-color: #4eafb6;
+  color: white;
+  margin-right: 10px;
+}
+
+.hire-btn:hover {
+  background-color: #192928;
+}
+
+.watch-btn {
+  background: transparent;
+  border: 2px solid rgb(36, 31, 31);
+  color: rgb(60, 175, 169);
+}
+
+.watch-btn:hover {
+  background-color: rgb(33, 71, 71);
+  color: black;
+}
+
+/* Profile Image */
+.profile-image-container {
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
   
-  /* Profile Image Container */
-  .profile-image-container {
-    flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
   }
-  
+
   .profile-image {
-    width: 400px;
-    height: 450px;
-    border-radius: 30%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(76, 216, 216, 0.644);
-    transition: transform 0.3s;
+    width: 250px;
   }
-  
-  .profile-image:hover {
-    transform: scale(1.05);
+
+  h1 {
+    font-size: 2.5rem;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .home {
-      flex-direction: column;
-      text-align: center;
-      gap: 30px;
-    }
-  
-    .text-content h1 {
-      font-size: 2rem;
-    }
-  
-    .type-animation {
-      font-size: 1.2rem;
-    }
-  
-    .profile-image {
-      width: 200px;
-      height: 200px;
-    }
+
+  .type-animation {
+    font-size: 1.5rem;
   }
-  
+
+  .nav-links {
+    display: none; /* Hide menu on mobile */
+  }
+}
