@@ -7,7 +7,7 @@ function Home() {
     <div className="home">
       {/* Navigation Bar */}
       <nav className="navbar">
-        <div className="logo">Amishka</div>
+        <div className="logo">AM~</div>
 
         <div className="nav-center">
           <ul className="nav-links">
@@ -57,7 +57,7 @@ function Home() {
           {/* Buttons */}
           <div className="buttons">
             <p>
-              
+
             </p>
             <button className="hire-btn">Hire Me</button>
             <button className="watch-btn">▶ Watch Video</button>
